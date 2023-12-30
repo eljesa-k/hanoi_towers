@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
 public class HanoiSolverIterative extends HanoiSolver{
-    public HanoiSolverIterative(int n, int src, int dest) {
-        super(n, src, dest);
+    public HanoiSolverIterative(int n, int src, int dest, HanoiWritter h) {
+        super(n, src, dest, h);
     }
     public void solve() {
         System.out.println("Iterative");

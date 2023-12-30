@@ -2,12 +2,12 @@ import java.util.Arrays;
 
 public class HanoiSolverRecursive extends HanoiSolver{
     private int step_count = 0;
-    public HanoiSolverRecursive(int n, int src, int dest) {
-        super(n, src, dest);
+    public HanoiSolverRecursive(int n, int src, int dest, HanoiWritter h) {
+        super(n, src, dest, h);
     }
     public void solve(){
         System.out.println("\nRecursive");
-        System.out.println("0:init  " + Arrays.toString(towers));
+        System.out.println("0:initial  " + Arrays.toString(towers));
         hanoiRecursive(n, src, dest, towers);
     }
     public void hanoiRecursive(int n, int src, int dest, Tower[] towers){
